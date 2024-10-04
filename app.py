@@ -874,8 +874,9 @@ def main():
     input_text = st.text_area("Enter Input Text", "")
     language = st.selectbox("Select Language", ["Auto Detect", "English", "German", "French"])
     speaker1 = st.selectbox("Select Speaker 1 Voice", ["Andrew - English (United States)", "Ava - English (United States)"])
+    input_file = ''
     speaker2 = st.selectbox("Select Speaker 2 Voice", ["Brian - English (United States)", "Emma - English (United States)"])
-    api_key = st.text_input("Enter Google API Key", "")
+    api_key = st.text_input("Enter Google API Key you can get it here :- https://aistudio.google.com/ ", "")
 
     if st.button("Generate Podcast"):
         if not input_text and not input_file:
